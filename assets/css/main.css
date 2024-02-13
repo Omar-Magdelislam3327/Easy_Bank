@@ -1,0 +1,223 @@
+*{
+    font-family: 'Public Sans', sans-serif;
+}
+:root{
+    --main:#2ACB6A;
+    --second:#2D314E;
+    --third:#80D4DE;
+    
+}
+.navbar{
+    background-color: white;
+    
+}
+.navbar .container .navbar-nav .nav-item:hover{
+    color: var(--main);
+}
+.btn-easy{
+    background-image: linear-gradient(to right , #2ACB6A, #80D4DE);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 18px;
+    font-family: 700;
+    transition: all 0.5s ease;
+}
+.btn-easy:hover{
+    background-image: linear-gradient(to right , #2acb6a80, #80d5de80);
+}
+.nav-link{
+    position: relative;
+    transition: 0.3 ease-in;
+}
+.nav-link:hover{
+    color: black !important;
+}
+.nav-link::after{
+    content: "";
+    position: absolute;
+    bottom: -24px;
+    right: 4px;
+    width: 46px;
+    height: 7px;
+    background-color: white;
+    transition: 0.3 ease-in;
+}
+.nav-link:hover::after{
+    content: "";
+    position: absolute;
+    bottom: -24px;
+    right: 4px;
+    width: 46px;
+    height: 7px;
+    background-image: linear-gradient(to right , #2ACB6A, #80D4DE);
+    z-index: 98765;
+    transition: background-color 0.3 ease-in;
+}
+.section1{
+    background-color: #FAFAFA;
+    height: 92vh;
+    & h2{
+        font-size: 53px;
+        width: 100%;
+        color: var(--second);
+    }
+    & p{
+        font-size: 20px;
+    }
+}
+.section2{
+    background-color: #F4F5F7;
+    & .title{
+        & h3{
+            color: var(--second);
+        }
+        & p{
+            font-size: 20px;
+            width: 60%;
+        }
+    }
+}
+.section3{
+    background-color: #FAFAFA;
+    h4{
+        transition: 0.3s all ease-in-out;
+    }
+    .title h3{
+        color: var(--second);
+    }
+    & .card{
+        transition: all 0.5s;
+        & h4{
+            color: var(--second);
+        }
+    }
+}
+.section3 .card:hover{
+    transform: translateY(-10px);
+}
+.section3 h4:hover{
+    color: var(--third);
+}
+footer{
+    background-color: var(--second);
+    transition: 0,3s all ease-in;
+    cursor: pointer;
+}
+footer .container .row .col-lg-3 p:hover{
+    color: var(--main) !important;
+}
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+@media (max-width:568px){
+    .section2{
+        text-align: center;
+        & p{
+            width: 100% !important;
+            padding-bottom: 20px;
+        }
+    }
+    .section3{
+        text-align: center;
+        & h3{
+            font-size: 30px;
+        }
+        & .card{
+            margin-bottom: 20px;
+        }
+    }
+    footer{
+        text-align: center;
+        & p{
+            margin-bottom: 15px;
+        }
+        .copy{
+            margin-top: 15px;
+            margin-bottom: 0px;
+        }
+        .foot{
+            margin: 15px 0px;
+        }
+        .logos{
+            margin-bottom: 15px;
+        }
+    }
+}
+@media (max-width:768px){
+
+    .section2{
+        text-align: center;
+        & p{
+            width: 100% !important;
+            padding-bottom: 20px;
+        }
+    }
+    .section3{
+        text-align: center;
+        & h3{
+            font-size: 30px;
+        }
+        & .card{
+            margin-bottom: 20px;
+        }
+    }
+    footer{
+        text-align: center;
+        & p{
+            margin-bottom: 15px;
+        }
+        .copy{
+            margin-top: 15px;
+            margin-bottom: 0px;
+        }
+        .foot{
+            margin: 15px 0px;
+        }
+        .logos{
+            margin-bottom: 15px;
+        }
+    }
+}
+@media (max-width:992px){
+    .section1{
+        height: 230vh;
+    }
+    .section2{
+        text-align: center;
+        & p{
+            width: 100% !important;
+            padding-bottom: 20px;
+        }
+    }
+    .section3{
+        text-align: center;
+        & h3{
+            font-size: 30px;
+        }
+        & .card{
+            margin-bottom: 20px;
+        }
+    }
+    footer{
+        text-align: center;
+        & p{
+            margin-bottom: 15px;
+        }
+        .copy{
+            margin-top: 15px;
+            margin-bottom: 0px;
+        }
+        .foot{
+            margin: 15px 0px;
+        }
+        .logos{
+            margin-bottom: 15px;
+        }
+    }
+}
